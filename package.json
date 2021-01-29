@@ -1,0 +1,30 @@
+{
+  "name": "eval-json-path",
+  "version": "1.0.0",
+  "description": "Evaluate and query json object value at given path",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taowangpro/eval-json-path.git"
+  },
+  "keywords": [
+    "json",
+    "object",
+    "query",
+    "evaluate",
+    "traversal",
+    "path"
+  ],
+  "author": "Tao Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taowangpro/eval-json-path/issues"
+  },
+  "homepage": "https://github.com/taowangpro/eval-json-path#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
