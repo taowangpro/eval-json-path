@@ -1,11 +1,13 @@
 {
   "name": "eval-json-path",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Evaluate and query json object value at given path",
   "main": "index.js",
+  "types": "index.d.js",
   "scripts": {
     "fix": "standard --fix",
-    "test": "standard --fix && jest --no-cache"
+    "test": "standard --fix && jest --no-cache",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
