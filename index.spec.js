@@ -4,9 +4,10 @@ describe('Date Translation', () => {
   const obj = {
     step1: {
       step2: {
-        'pretty.nice-step': {
-          step3: 4
-        }
+        'pretty.nice-step': [
+          {},
+          {step3: 4}
+        ]
       }
     }
   }
@@ -36,12 +37,12 @@ describe('Date Translation', () => {
   })
 
   test('nice-name steps further', () => {
-    const result = evalJsonPath(obj, 'step1.step2[pretty.nice-step].step3')
-    expect(result).toBe(obj.step1.step2['pretty.nice-step'].step3)
+    const result = evalJsonPath(obj, 'step1.step2[pretty.nice-step][1].step3')
+    expect(result).toBe(4)
   })
 
   test('any out of track', () => {
-    const result = evalJsonPath(obj, 'step1.XXX[pretty.nice-step].step3')
+    const result = evalJsonPath(obj, 'step1.xxxxx[pretty.nice-step][1].step3')
     expect(result).toBe(undefined)
   })
 })

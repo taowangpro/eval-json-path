@@ -1,6 +1,6 @@
 {
   "name": "eval-json-path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Evaluate and query json object value at given path",
   "main": "index.js",
   "scripts": {
